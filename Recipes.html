@@ -1,25 +1,77 @@
-<div class="card-grid">
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Recipes </title>
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <script src="Assets/js/modal.js" defer></script>
+
+</head>
+
+<body>
 
  
 
-    <div class="card" onclick="openModal('content/recipe1.txt')">
+<header>
 
-        <img src="assets/images/recipe1.jpg">
+    <img src="Assets/images/header.jpg" class="header-img">
 
-        <p>Recipe 1</p>
+</header>
 
+ 
+
+<nav class="tabs">
+
+    <a href="index.html">Home</a>
+
+    <a href="Recipes.html">Recipes</a>
+
+    <a href="Science-thoughts.html">Science Thoughts</a>
+
+</nav>
+
+ 
+
+<section class="content">
+
+    <h1>Recipes</h1>
+
+    <div class="card-grid">
+
+        <div class="card" onclick="openModal('Assets/content/recipe1.txt')">
+
+            <img src="Assets/images/recipe1.jpg">
+
+            <p>Recipe 1</p>
+
+        </div> 
+
+         <div class="card" onclick="openModal('Assets/content/recipe2.txt')">
+
+            <img src="Assets/images/recipe2.jpg">
+
+            <p>Recipe 2</p>
+
+        </div>
     </div>
+</section>
 
- 
+<div id="modal" class="modal">
 
-    <div class="card" onclick="openModal('content/recipe2.txt')">
+    <button class="back-btn" onclick="closeModal()">Back</button>
 
-        <img src="assets/images/recipe2.jpg">
-
-        <p>Recipe 2</p>
-
-    </div>
-
- 
+    <pre id="modal-text"></pre>
 
 </div>
+
+ 
+
+</body>
+
+</html>

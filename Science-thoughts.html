@@ -1,25 +1,77 @@
-<div class="card-grid">
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Science Thoughts</title>
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <script src="Assets/js/modal.js" defer></script>
+
+</head>
+
+<body>
 
  
 
-    <div class="card" onclick="openModal('content/science1.txt')">
+<header>
 
-        <img src="assets/images/science1.jpg">
+    <img src="Assets/images/header.jpg" class="header-img">
 
-        <p>Science Idea 1</p>
+</header>
 
+ 
+
+<nav class="tabs">
+
+    <a href="index.html">Home</a>
+
+    <a href="Recipes.html">Recipes</a>
+
+    <a href="Science-thoughts.html">Science Thoughts</a>
+
+</nav>
+
+ 
+
+<section class="content">
+
+    <h1>Science Thoughts</h1>
+
+    <div class="card-grid">
+
+        <div class="card" onclick="openModal('Assets/content/science1.txt')">
+
+            <img src="Assets/images/science1.jpg">
+
+            <p>Science Idea 1</p>
+
+        </div>
+
+        <div class="card" onclick="openModal('Assets/content/science2.txt')">
+
+            <img src="Assets/images/science2.jpg">
+
+            <p>Science Idea 2</p>
+
+        </div>
     </div>
+</section>
 
- 
+<div id="modal" class="modal">
 
-    <div class="card" onclick="openModal('content/science2.txt')">
+    <button class="back-btn" onclick="closeModal()">Back</button>
 
-        <img src="assets/images/science2.jpg">
-
-        <p>Science Idea 2</p>
-
-    </div>
-
- 
+    <pre id="modal-text"></pre>
 
 </div>
+
+ 
+
+</body>
+
+</html>
