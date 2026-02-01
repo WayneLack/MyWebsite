@@ -11,7 +11,7 @@ new to this, I don't yet know the whole journey.
 - Phase 1: Create the absolute basic tree structure of html and css files for a website, with assets including any images and 
 	other files. This will not be neat, and will be largely incomplete
 - Phase 2: Flesh out the structure above with what I want the website to actually look like. I'm thinking a science page, a 
-	book-review page, and a recipe page. Ohter ideas will probably inspire me later. At this point, the website will still 
+	book-review page, and a recipe page. Other ideas will probably inspire me later. At this point, the website will still 
 	look terrible and will involve nothing complicated or special.
 - Phase 3: Following the basic skeleton of a website, I will look at how to make it actually look nice and would love to add an 
 	interactive part to the science bit of the webiste, like a dumb Monte Carlo simulation or something. 
