@@ -5,46 +5,60 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    <title>My Website</title>
-
+    <! -- Added some SEO here -->
+    <title>My Website - Home </title>
+    <meta name="description" content="Wayne Lack's corner of the web, sharing a mix of favourite recipes, reflective book reviews, and a splash of physics!" />
+    <meta name="keywords" content="website,homepage,wayne,lack,physics,awesome" />
+    <meta name="author" content="Wayne Lack" />
     <link rel="stylesheet" href="Assets/css/style.css">
 
 </head>
 
 <body>
 
- 
 
-<header>
-
-    <img src="Assets/images/header.jpg" class="header-img">
+<header class ="site-header">
+    <img src="Assets/images/header.jpg" class="header-img" alt="Einstein">
 
 </header>
 
- 
+<nav class="navbar">
+    <button class="menu-toggle" id="menuToggle">Menu</button>
 
-<nav class="tabs">
-
-    <a href="Book-reviews.html">Book Reviews</a>
-
-    <a href="Recipes.html">Recipes</a>
-
-    <a href="Science-thoughts.html">Science Thoughts</a>
-
+    <ul class="nav-links" id="navLinks">
+        <li><a href="Book-reviews.html">Book Reviews </a> </li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="Science-thoughts.html">Science Thoughts</a></li>
+    </ul>
 </nav>
 
- 
+<main class="content">
 
-<section class="content">
+    <h1>Welcome to My Website</h1>
 
-    <h1>About This Website</h1>
+    <p>
+        This is the landing page of my basic website. The purpose of the website is actually for me to learn basic coding tools. 
+        For this reason, there may be weird features that would not be standard of an actual professional website, and you'll just have to deal with it. 
+    </p>
+    <p>
+        Please do enjoy any content that I put out there, which for now should include a few book reviews and some recipes I like. 
+        It may well include more interesting physics as time goes on too. 
+    </p>
 
-    <p>This is a simple site where I share book reviews, recipes, and science thoughts. More content coming soon.</p>
+</main>
 
-</section>
+<! -- Footer just to see how things work for now -->
+<footer>
+    <p> &copy; 2026 Wayne Lack. All rights reserved.</p>
+    <p>
+        This site is hosted using GitLab pages. Content is purely for the bantz.
+    </p>
+</footer>
 
- 
+<! -- Sneaky bit of Javascript for the mobile menu -->
+<script src = "Assets/js/menu.js"></script>
 
 </body>
 
