@@ -1,0 +1,23 @@
+[
+  {
+    "id": "enders-game",
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "date": "2024-11-10",
+    "rating": 9,
+    "genre": "Science Fiction",
+    "cover": "Assets/images/enders-game.jpg",
+    "reviewFile": "Assets/content/enders-game.txt"
+  },
+  {
+    "id": "androids-sheep",
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "date": "2024-10-02",
+    "rating": 8,
+    "genre": "Science Fiction",
+    "cover": "Assets/images/androids-sheep.jpg",
+    "reviewFile": "Assets/content/androids-sheep.txt"
+  }
+]
+

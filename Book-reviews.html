@@ -1,85 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <title>Book Reviews</title>
 
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/book-reviews.css">
 
     <script src="Assets/js/modal.js" defer></script>
-
+    <script src="Assets/js/menu.js" defer></script>
+    <script src="Assets/js/book-reviews.js" defer></script>
 </head>
 
 <body>
-
- <header class ="site-header">
+<header class="site-header">
     <img src="Assets/images/header.jpg" class="header-img" alt="Einstein">
 </header>
 
 <nav class="navbar">
     <button class="menu-toggle" id="menuToggle">Menu</button>
-
     <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="Recipes.html">Recipes </a> </li>
+        <li><a href="Recipes.html">Recipes</a></li>
         <li><a href="Science-thoughts.html">Science Thoughts</a></li>
     </ul>
 </nav>
 
- 
-
-<section class="content">
-
+<main class="content">
     <h1>Book Reviews</h1>
 
- 
-
-    <div class="card-grid">
-
- 
-
-        <div class="card" onclick="openModal('Assets/content/enders-game.txt')">
-
-            <img src="Assets/images/enders-game.jpg">
-
-            <p>Ender's Game</p>
-
+    <section class="controls">
+        <div class="search-wrapper">
+            <label for="searchInput" class="visually-hidden">Search by title</label>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by title..."
+            >
         </div>
 
- 
+        <div class="sort-wrapper">
+            <label for="sortSelect">Organise by:</label>
+            <select id="sortSelect">
+                <option value="date">Age since I wrote it (newest first)</option>
+                <option value="rating">Stars out of 10</option>
+                <option value="genre">Genre</option>
+                <option value="vowels">Number of vowels in title</option>
+            </select>
 
-        <div class="card" onclick="openModal('Assets/content/androids-sheep.txt')">
-
-            <img src="Assets/images/androids-sheep.jpg">
-
-            <p>Do Androids Dream of Electric Sheep?</p>
-
+            <div id="genreFilterWrapper" class="genre-filter hidden">
+                <label for="genreSelect">Genre:</label>
+                <select id="genreSelect">
+                    <option value="all">All genres</option>
+                    <!-- Options will be filled dynamically -->
+                </select>
+            </div>
         </div>
+    </section>
 
- 
+    <section id="bookGrid" class="card-grid">
+        <!-- Cards injected by JS -->
+    </section>
+</main>
 
+<!-- Modal -->
+<div id="reviewModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close review">
+            <span class="close-circle">
+                <span class="close-x">×</span>
+            </span>
+        </button>
+
+        <header class="modal-header">
+            <div class="modal-meta">
+                <p class="modal-date" id="modalDate"></p>
+                <p class="modal-rating" id="modalRating"></p>
+            </div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+        </header>
+
+        <section class="modal-body">
+            <pre id="modalText" class="modal-text"></pre>
+        </section>
     </div>
-
-</section>
-
- 
-
-<div id="modal" class="modal">
-
-    <button class="back-btn" onclick="closeModal()">Back</button>
-
-    <pre id="modal-text"></pre>
-
 </div>
 
- 
-<! -- Sneaky bit of Javascript for the mobile menu -->
-<script src = "Assets/js/menu.js"></script>
-
 </body>
-
 </html>
