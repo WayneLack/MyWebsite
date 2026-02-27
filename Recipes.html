@@ -16,26 +16,20 @@
 
 <body>
 
- 
-
-<header>
-
-    <img src="Assets/images/header.jpg" class="header-img">
+ <header class ="site-header">
+    <img src="Assets/images/header.jpg" class="header-img" alt="Einstein">
 
 </header>
-
  
+<nav class="navbar">
+    <button class="menu-toggle" id="menuToggle">Menu</button>
 
-<nav class="tabs">
-
-    <a href="index.html">Home</a>
-
-    <a href="Recipes.html">Recipes</a>
-
-    <a href="Science-thoughts.html">Science Thoughts</a>
-
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Book-reviews.html">Book Reviews </a> </li>
+        <li><a href="Science-thoughts.html">Science Thoughts</a></li>
+    </ul>
 </nav>
-
  
 
 <section class="content">
@@ -71,6 +65,8 @@
 </div>
 
  
+<! -- Sneaky bit of Javascript for the mobile menu -->
+<script src = "Assets/js/menu.js"></script>
 
 </body>
 
